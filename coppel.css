@@ -333,12 +333,12 @@ main {
 .input-label {
     width: 100%;
     height: 24px;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #1B1A16;
+    color: #081754;
     flex: none;
     order: 0;
     align-self: stretch;
