@@ -273,9 +273,9 @@ main {
 
 .subtitle-container {
     align-self: stretch;
-    color: var(--Text-text, #1B1A16);
+    color: var(--Text-text, #081754);
     text-align: center;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: var(--font-size-body, 16px);
     font-style: normal;
     font-weight: 400;
