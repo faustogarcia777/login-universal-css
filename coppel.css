@@ -130,12 +130,12 @@ body {
 }
 
 .footer-text {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #1B1A16;
+    color: #081754;
     margin: 0;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .footer-link {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -535,24 +535,24 @@ main {
 
 
 .text {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #1B1A16;
+    color: #081754;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
 .link {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #006FB9;
+    color: #1C42E8;
     text-decoration: none;
     flex: none;
     order: 1;
@@ -691,7 +691,7 @@ main {
 
 .button-text {
     height: 24px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -699,7 +699,7 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #1B1A16;
+    color: #081754;
     flex: none;
     order: 1;
     flex-grow: 0;
