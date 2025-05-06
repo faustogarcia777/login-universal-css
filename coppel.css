@@ -71,9 +71,9 @@ body {
     height: auto;
     background: #1C42E8;
     border-radius: 999px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
@@ -229,12 +229,12 @@ main {
 
 .title-container {
     align-self: center;
-    color: var(--text, #1B1A16);
+    color: var(--text, #081754);
     text-align: center;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: var(--font-size-h2, 28px);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 130%;
     margin: 0;
 }
