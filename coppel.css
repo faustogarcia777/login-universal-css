@@ -1677,7 +1677,6 @@ main {
 }
 
 .central-actions-container-login-password {
-    align-items: center;
     gap: 24px;
     isolation: isolate;
     width: 100%;
@@ -1873,7 +1872,7 @@ main {
 
 .link-login-password,
 .link-text-login-password {
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #006fb9;
     text-decoration: none;
     font-style: normal;
@@ -1891,7 +1890,7 @@ main {
 .forgot-password-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0;
     gap: 4px;
@@ -1908,6 +1907,7 @@ main {
     flex: none;
     order: 1;
     flex-grow: 0
+    font-size: 14px;
 }
 
 #error-message-container {
