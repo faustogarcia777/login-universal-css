@@ -881,7 +881,7 @@ main {
     justify-content: center;
     padding: 24px;
     gap: 24px;
-    width: 380px;
+    width: 389px;
     height: auto;
     position: relative;
     background: #fff
@@ -1633,11 +1633,11 @@ main {
 }
 
 .title-text-login-password {
-    font-family: "Circular Std", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 130%;
-    color: #1b1a16;
+    color: #081754;
     flex: none;
     flex-grow: 0
 }
