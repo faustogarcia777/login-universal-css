@@ -374,7 +374,7 @@ main {
     font-weight: 400;
     line-height: 24px;
     color: #081754;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #C9C9C9;
     border-radius: 8px;
     outline: none;
     placeholder-color: #BDBDBD;
@@ -1152,7 +1152,8 @@ main {
     color: #1C42E8;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .button-normal-login-password {
@@ -1173,7 +1174,7 @@ main {
 
 /* Estilo cuando el botón está habilitado */
 .button-normal-login-password:not([disabled]) {
-    background: #005A99;
+    background: #1C42E8;
     cursor: pointer;
 }
 
@@ -1186,13 +1187,13 @@ main {
 }
 
 .button-text-login-password {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: #717171;
+    color: #FFFFFF;
     transition: color 0.3s ease;
 }
 
@@ -1775,7 +1776,7 @@ main {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    color: #006FB9;
+    color: #1C42E8;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -1873,7 +1874,7 @@ main {
 .link-login-password,
 .link-text-login-password {
     font-family: "Poppins", sans-serif;
-    color: #006fb9;
+    color: #1C42E8;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
