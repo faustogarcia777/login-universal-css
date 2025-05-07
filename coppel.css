@@ -1183,7 +1183,7 @@ main {
 }
 
 .button-normal-login-password:not([disabled]):active {
-    background: #003D66;
+    background: #1C42E8;
 }
 
 .button-text-login-password {
@@ -1203,7 +1203,7 @@ main {
 }
 
 .button-text-login-password {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1845,7 +1845,7 @@ main {
 }
 
 .button-text-login-password {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #717171;
     width: auto
