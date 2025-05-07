@@ -1174,7 +1174,7 @@ main {
 
 /* Estilo cuando el botón está habilitado */
 .button-normal-login-password:not([disabled]) {
-    background: #1C42E8;
+    background: #1C42E8 !important;
     cursor: pointer;
 }
 
@@ -1183,7 +1183,7 @@ main {
 }
 
 .button-normal-login-password:not([disabled]):active {
-    background: #1C42E8;
+    background: #1C42E8 !important;
 }
 
 .button-text-login-password {
