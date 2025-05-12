@@ -2466,20 +2466,20 @@ main {
 }
 
 .text-bold {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #081754;
+    color: #081754 !important;
     margin: 0;
 }
 
 .text-normal {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #081754;
+    color: #081754 !important;
     margin: 0;
     word-break: break-word;
 }
@@ -2495,13 +2495,13 @@ main {
     max-width: 332px;
     height: 48px;
     background: white;
-    border: 2px solid #006FB9;
+    border: 2px solid #1C42E8;
     border-radius: 999px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #006FB9;
+    color: #1C42E8;
     box-sizing: border-box;
 }
 
