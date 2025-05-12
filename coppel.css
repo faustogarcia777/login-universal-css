@@ -2463,6 +2463,7 @@ main {
     flex: none;
     order: 1;
     flex-grow: 1;
+    gap: 29px !important;
 }
 
 .text-bold {
@@ -2501,7 +2502,7 @@ main {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #1C42E8;
+    color: #1C42E8 !important;
     box-sizing: border-box;
 }
 
@@ -2521,7 +2522,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #006FB9;
+    color: #1C42E8;
 }
 
 /* Media queries para responsividad */
