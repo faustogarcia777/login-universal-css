@@ -1246,8 +1246,12 @@ main {
     background: #1C42E8 !important;
 }
 
+.button-normal-signup-password:not([disabled]):active {
+    background: #1C42E8 !important;
+}
+
 .button-text-signup-password {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #717171;
     width: auto
