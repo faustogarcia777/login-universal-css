@@ -1242,7 +1242,7 @@ main {
     cursor: not-allowed
 }
 
-.button-normal-signup-password:not([disabled]):active {
+.button-normal-signup-password:not([disabled]) {
     background: #1C42E8 !important;
 }
 
