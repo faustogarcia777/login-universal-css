@@ -1191,6 +1191,11 @@ main {
     background: #1C42E8 !important;
 }
 
+.button-normal:not([disabled]) {
+    background: #1C42E8 !important;
+}
+
+
 .button-text-login-password {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
