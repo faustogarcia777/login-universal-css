@@ -1396,6 +1396,7 @@ main {
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-top: 24px;
 }
 
 .button-container-reset-request {
