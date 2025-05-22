@@ -38,7 +38,7 @@ window.continueLoginButtonTag = function () {
 
 window.continueLoginPassTag = function () {
     gaUtils.pushEvent({
-        interaccionNombre: 'Login - Continuar',
+        interaccionNombre: 'Login normal - Continuar',
         page: '/login-normal',
         event: 'loginIntento'
     });
@@ -46,7 +46,7 @@ window.continueLoginPassTag = function () {
 
 window.continueLoginEnterPassTag = function () {
     gaUtils.pushEvent({
-        interaccionNombre: 'Login - Enter',
+        interaccionNombre: 'Login normal - Enter',
         page: '/login-normal',
         event: 'loginIntento'
     });
@@ -105,7 +105,7 @@ window.continueCreateEnterTag = function () {
 
 window.continueCreateButtonTag = function () {
     gaUtils.pushEvent({
-        interaccionNombre: 'Crear Cuenta',
+        interaccionNombre: 'Continuar',
         page: '/crear-cuenta',
         event: 'crearCuenta'
     });
@@ -165,7 +165,7 @@ window.recoverPassClickTag = function () {
 
 window.recoverPassReturnLoginTag = function () {
     gaUtils.pushEvent({
-        interaccionNombre: 'Continuar',
+        interaccionNombre: 'Inicia Sesión',
         page: '/recuperacion-contrasena',
         event: 'clicClienteDigital'
     });
