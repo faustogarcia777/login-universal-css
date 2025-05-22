@@ -38,7 +38,7 @@ window.continueLoginButtonTag = function () {
 
 window.continueLoginPassTag = function () {
     gaUtils.pushEvent({
-        interaccionNombre: 'Login normal - Continuar',
+        interaccionNombre: 'Login normal - Click',
         page: '/login-normal',
         event: 'loginIntento'
     });
