@@ -220,6 +220,11 @@ window.continueCreateNewPassTag = function () {
 };
 
 window.createPasskeyTag = function () {
+const page = element.getAttribute('data-page') || '';
+                const interaccionNombre = element.getAttribute('data-interaccionNombre') || '';
+                const evento = element.getAttribute('data-evento') || '';
+                const canal = document.getElementById('canal') ?
+                    document.getElementById('canal').textContent.replace('tag:', '').trim() : 'Coppel.com';
     gaUtils.pushEvent({
         interaccionNombre: 'Crear llave digital',
         page: '/crear-llave-digital',
