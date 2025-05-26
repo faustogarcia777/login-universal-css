@@ -219,6 +219,15 @@ window.continueCreateNewPassTag = function () {
     });
 };
 
+window.createPasskeyTag = function () {
+    gaUtils.pushEvent({
+        interaccionNombre: 'Crear llave digital',
+        page: '/crear-llave-digital',
+        cuentaTipo: 'NA',
+        event: 'crearCuenta'
+    });
+};
+
 /*
 function backToLoginTag() {
     var 
