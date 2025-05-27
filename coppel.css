@@ -2304,6 +2304,15 @@ main {
     cursor: not-allowed;
 }
 
+.button-normal-reset-password:not([disabled]) {
+    background: #1C42E8 !important;
+    cursor: pointer;
+}
+
+.button-normal-reset-password:not([disabled]):hover {
+    background: #004A7F;
+}
+
 .button-normal-reset-password:not([disabled]):active {
     background: #1C42E8 !important;
 }
