@@ -2123,7 +2123,7 @@ main {
 
 .activation-email-ask {
 
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     font-family: 'Poppins', 'sans-serif';
     color: #081754;
     font-size: 14px;
