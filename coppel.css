@@ -242,13 +242,13 @@ main {
 .title-text {
     width: 100%;
     height: 36px;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 28px;
     line-height: 130%;
     text-align: center;
-    color: #1B1A16;
+    color: #081754;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -418,7 +418,7 @@ main {
     font-weight: 400;
     line-height: 24px;
     color: #081754;
-    border: 1px solid #C9C9C9;
+    border: 1px solid #BDBDBD;
     border-radius: 8px;
     outline: none;
 }
@@ -1059,7 +1059,7 @@ main {
     font-weight: 400;
     line-height: 24px;
     color: #1b1a16;
-    border: 1px solid #bdbdbd;
+    border: 1px solid #BDBDBD;
     border-radius: 8px;
     outline: 0;
     overflow: hidden;
@@ -1820,7 +1820,7 @@ main {
     font-weight: 400;
     line-height: 24px;
     color: #1b1a16;
-    border: 1px solid #C9C9C9;
+    border: 1px solid #BDBDBD;
     border-radius: 8px;
     outline: 0;
     overflow: hidden;
@@ -2243,13 +2243,13 @@ main {
     right: 16px;
     width: 60px;
     height: 22px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
     text-align: right;
-    color: #006FB9;
+    color: #1C42E8;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -2264,7 +2264,7 @@ main {
     justify-content: flex-start;
     padding: 24px 24px 80px 24px;
     gap: 24px;
-    width: 380px;
+    width: 389px;
     height: auto;
     position: relative;
     background: #fff;
@@ -2304,12 +2304,16 @@ main {
     cursor: not-allowed;
 }
 
+.button-normal-reset-password:not([disabled]):active {
+    background: #1C42E8 !important;
+}
+
 .subtitle-text-reset-password {
     order: 0;
-    color: #717171;
+    color: #081754;
     width: 100%;
     height: 24px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2318,6 +2322,7 @@ main {
     flex: none;
     align-self: stretch;
     flex-grow: 0;
+    margin-bottom: 20px;
 }
 
 /* main pasa a ser */
