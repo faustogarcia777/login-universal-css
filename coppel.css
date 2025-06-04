@@ -510,6 +510,10 @@ main {
     flex-grow: 1;
 }
 
+.button-normal:not([disabled]):hover {
+    background: #081754 !important;
+}
+
 .text-link-container {
     display: flex;
     flex-direction: row;
