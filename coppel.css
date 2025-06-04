@@ -1178,7 +1178,7 @@ main {
 }
 
 .button-normal-login-password:not([disabled]):hover {
-    background: #081754;
+    background: #081754 !important;
 }
 
 .button-normal-login-password:not([disabled]):active {
