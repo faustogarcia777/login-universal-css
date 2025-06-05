@@ -2326,7 +2326,7 @@ main {
 }
 
 .button-normal-reset-password:not([disabled]):hover {
-    background: #004A7F;
+    background: #081754 !important;
 }
 
 .button-normal-reset-password:not([disabled]):active {
