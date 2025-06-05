@@ -535,6 +535,23 @@ main {
     flex-grow: 0;
 }
 
+@media (max-width: 767px) {
+    .text-link-container {
+        margin-top: 0px !important;
+    }
+
+    .divider-container {
+    margin-top: 0px !important;
+    }
+
+    .social-buttons-container {
+
+      margin-top: 0px !important;
+
+    }
+
+}
+
 .text,
 .link {
     margin: 0;
