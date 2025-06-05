@@ -2417,13 +2417,13 @@ main {
 .link-text-passkey-enrollment {
     width: 216px;
     height: 24px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #006FB9;
+    color: #1C42E8;
     text-decoration: none;
 }
 
