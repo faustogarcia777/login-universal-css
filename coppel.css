@@ -1391,6 +1391,10 @@ main {
     color: #FFFFFF;
 }
 
+.button-normal-reset-request:not([disabled]):hover {
+    background: #081754 !important;
+}
+
 .link-frame-reset-request {
     display: flex;
     flex-direction: row;
