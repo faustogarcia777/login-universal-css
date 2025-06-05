@@ -510,6 +510,10 @@ main {
     flex-grow: 1;
 }
 
+.button-normal[disabled]{
+    cursor: not-allowed !important;
+}
+
 .button-normal:not([disabled]):hover {
     background: #081754 !important;
 }
