@@ -213,9 +213,6 @@ main {
     gap: var(--s-unit-6, 24px);
     background: var(--Colores-background-body, #FFF);
     margin: auto;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-
 }
 
 .account-form-container-signup-id {
