@@ -1263,6 +1263,10 @@ main {
     background: #1C42E8 !important;
 }
 
+.button-normal-signup-password:not([disabled]):hover {
+    background: #081754 !important;
+}
+
 .button-text-signup-password {
     font-family: 'Poppins', sans-serif;
     text-align: center;
