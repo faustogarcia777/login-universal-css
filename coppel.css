@@ -512,6 +512,7 @@ main {
 
 .button-normal[disabled]{
     cursor: not-allowed !important;
+    color: #717171 !important;
 }
 
 .button-normal:not([disabled]):hover {
