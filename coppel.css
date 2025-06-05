@@ -2386,7 +2386,7 @@ main {
 }
 
 .button-normal-passkey-enrollment:hover {
-    background: #005b9f;
+    background: #081754 !important;
     color: #FFFFFF;
 }
 
