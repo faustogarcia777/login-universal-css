@@ -533,7 +533,6 @@ main {
     flex: none;
     order: 4;
     flex-grow: 0;
-    margin-top: 72px !important;
 }
 
 @media (max-width: 767px) {
