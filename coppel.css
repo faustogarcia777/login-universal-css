@@ -1974,15 +1974,15 @@ main {
     min-width: 200px;
     min-height: 72px;
     height: auto;
-    background: #FFF0EF;
-    border: 1px solid #BA4B44;
+    background: #FFFF;
+    border: 2px solid #FF594D;
     border-radius: 8px;
     flex: none;
     flex-grow: 0;
     order: 2;
     align-self: stretch;
-    color: #1B1A16 !important;
-    font-family: 'Helvetica Neue', sans-serif;
+    color: #081754 !important;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 20px;
     overflow-wrap: break-word;
@@ -1991,7 +1991,7 @@ main {
 }
 
 #error-message-container * {
-    color: #1B1A16 !important;
+    color: #081754 !important;
 }
 
 #error-message-container.visible {
