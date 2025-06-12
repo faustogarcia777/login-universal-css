@@ -2696,12 +2696,12 @@ main {
 }
 
 .support-text {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #1B1A16;
+    color: #081754;
     margin: 0;
     text-align: center;
 }
