@@ -2746,12 +2746,12 @@ main {
 .otp-text {
     width: 100%;
     max-width: 389px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #1B1A16;
+    color: #081754;
     text-align: center;
     margin: 0;
 }
