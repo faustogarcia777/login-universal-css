@@ -139,6 +139,18 @@ window.forgotPassTag = function () {
     });
 };
 
+window.askNewEmailTag = function () {
+    var canalElement = document.getElementById('canal');
+    var canal = canalElement ? canalElement.textContent.replace('tag:', '').trim() : 'Coppel.com';
+    gaUtils.pushEvent({
+        interaccionNombre: 'Solicitar correo nuevamente',
+        page: '/recuperacion-contrasena/revisa-tu-correo-electronico',
+        event: 'recuperacionContra',
+        canal: canal,
+        cuentaTipo: 'Correo'
+    });
+};
+
 window.passwordEnterCreateTag = function () {
     gaUtils.pushEvent({
         interaccionNombre: 'Crear cuenta enter',
