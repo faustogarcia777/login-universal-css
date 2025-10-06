@@ -2606,11 +2606,21 @@ main {
 
 /* Media queries para responsividad */
 @media (max-width: 360px) {
-    .passykey-container {
-        padding-top: 300px;
-        padding-bottom: 300px;
-        max-height: 100vh;
-    }
+  .passykey-container {
+    padding: 24px 16px; /* balanced padding all around */
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    min-height: calc(100vh - 100px);
+    justify-content: flex-start; /* ensure it doesn’t center off-screen */
+    box-sizing: border-box;
+  }
+
+    .main-passkey-enrollment {
+    min-height: 100vh;
+    align-items: flex-start; /* prevent vertical centering from creating blank space */
+    padding-top: 24px;
+  }
 
     .info-container {
         gap: 30px;
