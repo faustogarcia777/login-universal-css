@@ -2606,21 +2606,26 @@ main {
 
 /* Media queries para responsividad */
 @media (max-width: 360px) {
-  .passykey-container {
-    padding: 24px 16px; /* balanced padding all around */
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    min-height: calc(100vh - 100px);
-    justify-content: flex-start; /* ensure it doesn’t center off-screen */
+ .main-passkey-enrollment {
+    min-height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px;
     box-sizing: border-box;
   }
 
-    .main-passkey-enrollment {
-    min-height: 100vh;
-    align-items: flex-start; /* prevent vertical centering from creating blank space */
-    padding-top: 24px;
+  .passykey-container {
+    width: 100%;
+    max-width: 360px;  /* stop growing wider than 360 */
+    min-width: 300px;  /* stop shrinking smaller than this */
+    padding: 24px 16px;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    flex-shrink: 0;     /* prevent flexbox from forcing it smaller */
   }
+
 
     .info-container {
         gap: 30px;
@@ -2957,3 +2962,4 @@ main {
         z-index: 10 !important;
     }
 }
+
