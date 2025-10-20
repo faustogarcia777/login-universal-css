@@ -1788,7 +1788,6 @@ main {
     outline: none;
     overflow: hidden;
     white-space: nowrap;
-    direction: rtl;
     text-align: left;
 }
 
