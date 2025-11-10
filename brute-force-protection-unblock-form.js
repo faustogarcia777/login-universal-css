@@ -37,11 +37,20 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
 
     const button = auth0Wrapper.querySelector('#button-unblock');
-    if (button) {
-      button.addEventListener('click', function () {
-        window.location.href = 'https://www.coppel.com/auth0/login';
-      });
+if (button) {
+  button.addEventListener('click', function () {
+    // Find Auth0's native button
+    const nativeBtn = document.querySelector('button[name="action"][value="default"]');
+    if (nativeBtn) {
+      // Simulate a real click so Auth0's internal handler runs
+      nativeBtn.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+    } else {
+      // Fallback redirect (if somehow the native button isn’t there)
+      window.location.href = 'https://www.coppel.com/auth0/login';
     }
+  });
+}
+
 
   } catch (error) {
     console.error('Error rendering brute-force unblock success:', error);
