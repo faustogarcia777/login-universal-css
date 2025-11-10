@@ -1,29 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const hiddenWrapper = document.getElementById("auth0-hidden-wrapper");
-  try {
-
+(function() {
+  // Wait for Auth0 widget to appear, even if it's rendered after load
+  const observer = new MutationObserver(() => {
     const main = document.querySelector("main._widget");
-    if (!main) return;
+    const button = document.querySelector('button[name="action"][value="default"]');
+    if (!main || !button) return;
 
+    // Stop observing once we find what we need
+    observer.disconnect();
+
+    // === 1. MAIN & SECTION SETUP ===
     main.id = "main-unblock";
     main.className = "";
-
     const section = main.querySelector("section");
     if (section) {
       section.id = "unblock-container";
       section.className = "";
     }
 
+    // === 2. HIDE NATIVE HEADER & LOGO ===
+    document.querySelectorAll("header.c7bbc1178.cf1d3c95e").forEach(el => el.style.display = "none");
+    const logo = document.getElementById("prompt-logo-center");
+    if (logo) logo.style.display = "none";
 
+    // === 3. UNSET WRAPPERS ===
     [
       "div.ca085db1e.c34b211bf",
       "div.c16cfdf3e.ccd12cd85",
       "div.c96e14606"
     ].forEach(sel =>
-      document.querySelectorAll(sel).forEach(el => (el.style.all = "unset"))
+      document.querySelectorAll(sel).forEach(el => el.style.all = "unset")
     );
 
-
+    // === 4. ADD CHECK MARK ===
     if (section) {
       const checkContainer = document.createElement("div");
       checkContainer.id = "check-container-unblock";
@@ -38,25 +46,19 @@ document.addEventListener("DOMContentLoaded", function () {
       section.prepend(checkContainer);
     }
 
-   
-    const title = document.querySelector("h3");
+    // === 5. RENAME TITLE & BUTTON ===
+    const title = main.querySelector("h3");
     if (title) {
       title.id = "title-unblock";
       title.textContent = "Haz clic para desbloquear tu cuenta";
     }
 
-    const button = document.querySelector('button[name="action"][value="default"]');
     if (button) {
       button.id = "button-unblock";
       button.innerHTML = '<span id="button-unblock-text">Desbloquear cuenta</span>';
     }
 
-  
-    document.querySelectorAll("header.c7bbc1178.cf1d3c95e").forEach(el => (el.style.display = "none"));
-    const logo = document.getElementById("prompt-logo-center");
-    if (logo) logo.style.display = "none";
-
-
+    // === 6. INJECT CUSTOM CSS ===
     const css = `
 #main-unblock {
   margin: 0 auto;
@@ -121,9 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
   cursor: pointer;
   transition: background 0.2s ease;
 }
-#button-unblock:hover {
-  background: #0f2ecc;
-}
+#button-unblock:hover { background: #0f2ecc; }
 #button-unblock-text {
   color: #FFF;
   text-align: center;
@@ -135,11 +135,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const style = document.createElement("style");
     style.textContent = css;
     document.head.appendChild(style);
-  } catch (err) {
-    console.error("Error ejecutando el script:", err);
-  } finally {
-    if (hiddenWrapper) hiddenWrapper.style.removeProperty("display");
-  }
-});
 
+    // === 7. UNHIDE MAIN (ANTI-FLICKER FIX) ===
+    main.style.removeProperty("display");
+  });
+
+  // Observe DOM for Auth0’s dynamic rendering
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
 
