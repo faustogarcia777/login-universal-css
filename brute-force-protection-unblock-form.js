@@ -39,25 +39,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const button = auth0Wrapper.querySelector('#button-unblock');
 if (button) {
   button.addEventListener('click', function () {
-    // Wait until Auth0's native button appears (in case it's still rendering)
-    const interval = setInterval(() => {
-      const nativeBtn = document.querySelector('button[name="action"][value="default"]');
-      if (nativeBtn) {
-        clearInterval(interval);
-        nativeBtn.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+    const nativeBtn = document.querySelector('button[name="action"][value="default"]');
+    const form = nativeBtn ? nativeBtn.closest('form') : null;
+    if (form) {
+      if (typeof form.requestSubmit === 'function') {
+        form.requestSubmit(nativeBtn); // triggers same behavior as native click
+      } else {
+        form.submit();
       }
-    }, 100); // checks every 100ms for the native button
-
-    // Safety timeout: if not found after 3s, fallback redirect
-    setTimeout(() => {
-      clearInterval(interval);
-      const nativeBtn = document.querySelector('button[name="action"][value="default"]');
-      if (!nativeBtn) {
-        window.location.href = 'https://www.coppel.com/auth0/login';
-      }
-    }, 3000);
+    } else {
+      // fallback redirect
+      window.location.href = 'https://www.coppel.com/auth0/login';
+    }
   });
 }
+
 
   } catch (error) {
     console.error('Error rendering brute-force unblock success:', error);
