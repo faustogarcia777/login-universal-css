@@ -41,18 +41,18 @@ if (button) {
   button.addEventListener('click', function () {
     const nativeBtn = document.querySelector('button[name="action"][value="default"]');
     const form = nativeBtn ? nativeBtn.closest('form') : null;
+
     if (form) {
       if (typeof form.requestSubmit === 'function') {
-        form.requestSubmit(nativeBtn); // triggers same behavior as native click
+        form.requestSubmit(nativeBtn);
       } else {
         form.submit();
       }
-    } else {
-      // fallback redirect
-      window.location.href = 'https://www.coppel.com/auth0/login';
     }
   });
 }
+
+
 
 
   } catch (error) {
