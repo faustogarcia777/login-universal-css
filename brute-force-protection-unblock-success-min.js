@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function () { const auth0Wrapper =
 </div>
 <div id=button-container-unblock>
 <button id=button-unblock>
-<span id=button-unblock-text>Iniciar sesión</span>
+<span id=button-unblock-text>Iniciar sesiÃ³n</span>
 </button>
 </div>
 </div>
 </main>
-`; const button = auth0Wrapper.querySelector('#button-unblock'); if (button) { button.addEventListener('click', function () { window.location.href = 'https://www.coppel.com/auth0/login'; }); } } catch (error) { console.error('Error rendering brute-force unblock success:', error); } finally { if (auth0Wrapper) { auth0Wrapper.style.removeProperty('display'); auth0Wrapper.style.setProperty('height', 'inherit', 'important'); } } });
+`; const button = auth0Wrapper.querySelector('#button-unblock'); if (button) { button.addEventListener('click', function () { window.location.href = ' https://dev02auth.coppel.com/auth0/login'; }); } } catch (error) { console.error('Error rendering brute-force unblock success:', error); } finally { if (auth0Wrapper) { auth0Wrapper.style.removeProperty('display'); auth0Wrapper.style.setProperty('height', 'inherit', 'important'); } } });
