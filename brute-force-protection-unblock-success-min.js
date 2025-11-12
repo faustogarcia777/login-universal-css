@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () { const auth0Wrapper =
 </div>
 <div id=button-container-unblock>
 <button id=button-unblock>
-<span id=button-unblock-text>Iniciar sesiÃ³n</span>
+<span id=button-unblock-text>Iniciar sesión</span>
 </button>
 </div>
 </div>
