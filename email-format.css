@@ -913,6 +913,10 @@ main {
     background: #fff
 }
 
+.password-form-container:has(.error-message-container:not([style*="display:none])) {
+    margin: auto !important;
+}
+
 .title-container-signup-password,
 .title-text-signup-password {
     height: 36px;
