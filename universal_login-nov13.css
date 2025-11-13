@@ -1677,7 +1677,7 @@ main {
     background: #fff
 }
 
-.password-form-container:has(.error-message-container[style*="display:flex"]) {
+.password-form-container:has(.error-message-container) {
     margin: auto !important;
 }
 
