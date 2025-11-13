@@ -1677,7 +1677,7 @@ main {
     background: #fff
 }
 
-.password-form-container:has(.error-message-container) {
+.password-form-container:has(.error-message-container:not([style*="display:none])) {
     margin: auto !important;
 }
 
@@ -2016,7 +2016,6 @@ main {
 
 .password-form-container.has-error {
     padding-top: 16px;
-    margin: auto !important;
 }
 
 .title-text-reset-request {
