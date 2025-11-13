@@ -1,3 +1,4 @@
+
 html {
     margin: 0;
     padding: 0;
@@ -911,7 +912,6 @@ main {
     height: auto;
     position: relative;
     background: #fff;
-    margin-top: auto !important
 }
 
 .title-container-signup-password,
@@ -1676,7 +1676,7 @@ main {
     height: auto;
     position: relative;
     background: #fff;
-    margin-top: auto !important
+    margin: auto !important
 }
 
 .title-container-login-password,
@@ -2880,11 +2880,12 @@ main {
         padding-bottom: 20px !important;
     }
 
-        @media (max-width: 360px) {
+    @media (max-width: 360px) {
   .passykey-container {
     margin-bottom: 0 !important;
   }
 }
+
 
     .central-actions-container,
     .central-actions-container-login-id,
