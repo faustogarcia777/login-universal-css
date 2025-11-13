@@ -913,6 +913,9 @@ main {
     background: #fff
 }
 
+.password-form-container:has(#error-message-container.visible) {
+margin-top: auto !important;
+}
 
 .title-container-signup-password,
 .title-text-signup-password {
