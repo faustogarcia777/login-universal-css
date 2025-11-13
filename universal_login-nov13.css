@@ -1,4 +1,3 @@
-
 html {
     margin: 0;
     padding: 0;
@@ -911,7 +910,7 @@ main {
     width: 389px;
     height: auto;
     position: relative;
-    background: #fff;
+    background: #fff
 }
 
 .title-container-signup-password,
@@ -1675,8 +1674,11 @@ main {
     width: 389px;
     height: auto;
     position: relative;
-    background: #fff;
-    margin: auto !important
+    background: #fff
+}
+
+.password-form-container:has(.error-message-container[style*="display:flex"]) {
+    margin: auto !important;
 }
 
 .title-container-login-password,
