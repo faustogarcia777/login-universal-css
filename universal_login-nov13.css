@@ -2016,6 +2016,7 @@ main {
 
 .password-form-container.has-error {
     padding-top: 16px;
+    margin: auto !important;
 }
 
 .title-text-reset-request {
