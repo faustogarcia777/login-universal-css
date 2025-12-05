@@ -2863,7 +2863,7 @@ main {
         overflow-y: auto !important;
         overflow-x: hidden !important;
         -webkit-overflow-scrolling: touch !important;
-      
+        padding-bottom: 80px !important;
         margin-bottom: 0 !important;
         display: flex !important;
         align-items: center !important;
