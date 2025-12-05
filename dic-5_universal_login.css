@@ -2921,11 +2921,6 @@ main {
     }
 }
 
-@media (max-width: 767px) {
-    .account-form-container {
-        margin-bottom: 0px !important;
-    }
-
 @media (min-width: 768px) {
     html, body {
         height: 100% !important;
