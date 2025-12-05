@@ -913,9 +913,6 @@ main {
     background: #fff
 }
 
-.password-form-container:has(#error-message-container.visible) {
-margin-top: auto !important;
-}
 
 @media (max-height: 600px) {
     .password-form-container {
