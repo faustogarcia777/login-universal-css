@@ -2885,6 +2885,10 @@ main {
         padding-bottom: 20px !important;
     }
 
+    .password-form-container {
+        margin-top: auto !important;
+    }
+
         @media (max-width: 360px) {
   .passykey-container {
     margin-bottom: 0 !important;
