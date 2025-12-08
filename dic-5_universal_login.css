@@ -2885,10 +2885,6 @@ main {
         padding-bottom: 20px !important;
     }
 
-    .password-form-container {
-        margin-top: auto !important;
-    }
-
         @media (max-width: 360px) {
   .passykey-container {
     margin-bottom: 0 !important;
@@ -2922,6 +2918,12 @@ main {
         display: none !important;
         content: none !important;
         height: 0 !important;
+    }
+}
+
+@media (min-height: 920px) {
+    .password-form-container {
+        margin-top: auto !important;
     }
 }
 
