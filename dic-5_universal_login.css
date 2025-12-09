@@ -2921,7 +2921,7 @@ main {
     }
 }
 
-@media (min-height: 920px) {
+@media (max-height: 800px) {
     .password-form-container {
         margin-top: auto !important;
     }
